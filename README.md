@@ -54,16 +54,6 @@ http://localhost:3000
 - `npm run build` - Build production
 - `npm run start` - Menjalankan hasil build production
 
-## Deploy ke Vercel
-
-1. Push project ke GitHub
-2. Login ke [Vercel](https://vercel.com)
-3. Klik **Add New Project**
-4. Import repository GitHub ini
-5. Klik **Deploy**
-
-Setelah deploy selesai, bagikan URL Vercel ke orang yang kamu tuju.
-
 ## Kustomisasi Cepat
 
 - Ubah teks halaman utama di `logic.js`
