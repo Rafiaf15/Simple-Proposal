@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/RAFI/Documents/Simple-Proposal/app/thank-you/page.js"],"sourcesContent":["import Link from \"next/link\";\n\nexport default function ThankYouPage() {\n  return (\n    <main className=\"thank-you-page\">\n      <Link href=\"/\" className=\"btn btn-back\">\n        Back\n      </Link>\n\n      <section className=\"thank-you-card\">\n        <h1 className=\"thank-you-title\">FINALLY...CIEE PACARANN WANITA INDEPENDENNNN 💙</h1>\n        <p className=\"thank-you-copy\">\n          YESSSSSSSSSSSSSSSSSSSSSS, maaf yaa sebelumyaa nungguin aku lamaa...kadang buat kmu ovt atau bt gegara aku.\n        </p>\n      </section>\n    </main>\n  );\n}\n"],"names":["ThankYouPage","className","href"],"mappings":";;;;;AAAA;;;AAEe,SAASA;IACtB,qBACE,iRAAC;QAAKC,WAAU;;0BACd,iRAAC,6NAAI;gBAACC,MAAK;gBAAID,WAAU;0BAAe;;;;;;0BAIxC,iRAAC;gBAAQA,WAAU;;kCACjB,iRAAC;wBAAGA,WAAU;kCAAkB;;;;;;kCAChC,iRAAC;wBAAEA,WAAU;kCAAiB;;;;;;;;;;;;;;;;;;AAMtC"}}]
+}

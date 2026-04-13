@@ -1,0 +1,269 @@
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap";
+/* [project]/Documents/Simple-Proposal/app/globals.css [app-client] (css) */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, Arial, sans-serif;
+}
+
+.proposal-page {
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 60%, #312e81 100%);
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.proposal-bg-overlay {
+  background: linear-gradient(#00000047, #0000);
+  position: absolute;
+  inset: 0;
+}
+
+.proposal-bg-glow, .glow-left, .glow-right {
+  position: absolute;
+  inset: 0;
+}
+
+.glow-left {
+  background: radial-gradient(circle at 15%, #3b82f647, #0000 40%);
+}
+
+.glow-right {
+  background: radial-gradient(circle at 85% 20%, #ec489933, #0000 35%);
+}
+
+.proposal-card {
+  z-index: 2;
+  text-align: center;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  color: #e2e8f0;
+  background: #0f172a8c;
+  border: 1px solid #94a3b84d;
+  border-radius: 24px;
+  width: 100%;
+  max-width: 620px;
+  padding: 28px 22px;
+  position: relative;
+  box-shadow: 0 24px 70px #00000059;
+}
+
+.bubble {
+  filter: blur(18px);
+  border-radius: 999px;
+  position: absolute;
+}
+
+.bubble-top-right {
+  background: #f472b640;
+  width: 84px;
+  height: 84px;
+  top: -20px;
+  right: -20px;
+}
+
+.bubble-bottom-left {
+  background: #22c55e33;
+  width: 108px;
+  height: 108px;
+  bottom: -30px;
+  left: -30px;
+}
+
+.proposal-eyebrow {
+  color: #7dd3fc;
+  letter-spacing: .08em;
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.proposal-title {
+  color: #f8fafc;
+  margin: 10px 0 6px;
+  font-size: clamp(28px, 5vw, 40px);
+  line-height: 1.1;
+}
+
+.proposal-subtitle {
+  color: #cbd5e1;
+  margin: 0;
+  font-size: 16px;
+}
+
+.confession-box {
+  background: #1e293b99;
+  border: 1px solid #94a3b840;
+  border-radius: 16px;
+  margin-top: 18px;
+  padding: 16px;
+}
+
+.confession-text {
+  color: #f1f5f9;
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+.question-text {
+  background: linear-gradient(90deg, #fb7185, #f472b6, #fb923c);
+  color: #0000;
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin: 0;
+  font-size: clamp(26px, 4.8vw, 38px);
+  font-weight: 800;
+}
+
+.button-row {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  min-height: 84px;
+  margin-top: 18px;
+  display: flex;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 999px;
+  padding: 11px 22px;
+  font-weight: 700;
+  transition: transform .2s, box-shadow .2s, background .2s;
+}
+
+.btn:disabled {
+  opacity: .7;
+  cursor: not-allowed;
+}
+
+.btn-yes {
+  color: #fff;
+  background: linear-gradient(90deg, #22c55e, #06b6d4);
+  box-shadow: 0 10px 24px #10b98159;
+}
+
+.btn-yes:hover {
+  transform: translateY(-1px);
+}
+
+.btn-no {
+  color: #fda4af;
+  background: #0f172aad;
+  border: 1px solid #fb7185bf;
+}
+
+.count-badge {
+  background: #e11d4826;
+  border: 1px solid #fb718566;
+  border-radius: 999px;
+  margin-left: 8px;
+  padding: 2px 8px;
+  font-size: 12px;
+}
+
+.teaser-text {
+  color: #fcd34d;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.particle {
+  pointer-events: none;
+  filter: blur(1px);
+  z-index: 1;
+  border-radius: 999px;
+  position: absolute;
+}
+
+.particle-emerald {
+  background: #34d399b3;
+}
+
+.particle-cyan {
+  background: #22d3eeb3;
+}
+
+.particle-amber {
+  background: #fbbf24b3;
+}
+
+.particle-rose {
+  background: #fb7185b3;
+}
+
+.particle-violet {
+  background: #a78bfab3;
+}
+
+.particle-lime {
+  background: #a3e635b3;
+}
+
+.particle-indigo {
+  background: #818cf8b3;
+}
+
+.particle-pink {
+  background: #f472b6b3;
+}
+
+.particle-default {
+  background: #f8fafcb3;
+}
+
+.thank-you-page {
+  background: radial-gradient(circle at top, #1d4ed8 0%, #1e1b4b 40%, #020617 100%);
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 22px;
+  display: flex;
+  position: relative;
+}
+
+.btn-back {
+  color: #dbeafe;
+  background: #0f172a99;
+  border: 1px solid #93c5fd73;
+  text-decoration: none;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.thank-you-card {
+  text-align: center;
+  color: #e2e8f0;
+  background: #0f172a94;
+  border: 1px solid #94a3b840;
+  border-radius: 24px;
+  width: 100%;
+  max-width: 620px;
+  padding: 34px 26px;
+  box-shadow: 0 25px 80px #02061773;
+}
+
+.thank-you-title {
+  color: #f8fafc;
+  margin: 12px 0;
+  font-size: 34px;
+}
+
+.thank-you-copy {
+  color: #cbd5e1;
+  margin: 0;
+  line-height: 1.7;
+}
+
+/*# sourceMappingURL=Documents_Simple-Proposal_app_globals_1053172.css.map*/
